@@ -3,7 +3,7 @@ function generatePassword() {
   const passwordLength = document.getElementById('passwordLength').value;
   const includeLower = document.getElementById('includeLower').checked;
   const includeUpper = document.getElementById('includeUpper').checked;
-  const includeNumeric = document.getElementById('includenNumeric').checked;
+  const includeNumeric = document.getElementById('includeNumeric').checked;
   const includeSpecial = document.getElementById('includeSpecial').checked;
   
   if (passwordLength <8 || passwordLength > 128) {
@@ -11,7 +11,7 @@ function generatePassword() {
     return;
   }
 
-  if (!includeLower && !includeUpeer && !includeNumeric && !includeSpecial) {
+  if (!includeLower && !includeUpper && !includeNumeric && !includeSpecial) {
     alert('Please select one character type to include in the password.');
     return;
   }
@@ -33,7 +33,7 @@ function generatePassword() {
     generatedPassword += availableChars.charAt(randomIndex);
   }
 
-  document.getElementById('generatedPassword').textContent = 'Generated Password: ' = generatedPassword;
+  document.getElementById('generatedPassword').textContent = 'Generated Password: ' + generatedPassword;
   document.getElementById('generatedPassword').style.display = 'block';
 }
 
