@@ -7,6 +7,7 @@ This repository contains javascript code to generate a random password. The goal
 Technology Used: Javascript, ChatGPT
 
 Live Deployment Link:
+https://apatterson32.github.io/random-password-generator/
 
 Contact Information:
 
